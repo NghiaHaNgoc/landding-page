@@ -12,7 +12,7 @@ export default function OurEducations() {
     <>
       <div id="our-educations">
         <div className="p-3">
-          <h3>We Bring The Good Education To Life</h3>
+          <h2 style={{fontWeight:"bold"}}>We Bring The Good Education To Life</h2>
         </div>
         <div className="row">
           <div className="col-lg-5 p-5 d-flex justify-content-center align-items-center">
@@ -30,7 +30,7 @@ export default function OurEducations() {
           </div>
           <div className="col-lg-7 list-educations p-5">
             <div>
-              <h1 className="p-2">
+              <h1 className="p-2" style={{fontWeight: "bold"}}>
                 Let Your Education
                 <br />
                 Do The Walking
