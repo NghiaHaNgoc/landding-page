@@ -1,0 +1,42 @@
+#our-educations {
+	/* background: whitesmoke; */
+}
+
+#our-educations * {
+	font-family: 'Roboto';
+}
+
+#our-educations .teacher-container {
+	border-radius:  25px 25px;
+	overflow: hidden;
+}
+#our-educations .teacher-container img{
+	width: 100%;
+	transition: transform .2s;
+}
+#our-educations .teacher-container img:hover {
+	transform: scale(1.2);
+
+}
+
+#our-educations .job-opportunities {
+	background: white;
+	width: 20%;
+	aspect-ratio: 1;
+	border-radius: 10px 10px;
+	position: relative;
+	right: 10%;
+}
+
+#our-educations .job-opportunities .job-span{
+	background-image: url(./assets/underline.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+}
+#our-educations .list-educations img {
+	width: 100%;
+}
+#our-educations .list-educations .row p {
+	font-size: 1.5rem;
+}

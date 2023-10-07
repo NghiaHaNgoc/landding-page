@@ -1,0 +1,17 @@
+.parent {
+	width: 70vh;
+	background: whitesmoke;
+}
+
+.child-1 {
+	width: 40vh;
+	aspect-ratio: 1;
+	background: cyan;
+}
+.child-2 {
+	position: relative;
+	width:20vh;
+	aspect-ratio: 1;
+	right: 100px;
+	background: lightgreen;
+}
