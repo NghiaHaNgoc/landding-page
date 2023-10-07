@@ -34,15 +34,15 @@ export default function StudentReviews() {
             </div>
           </div>
 
-          <div className="col-lg-7 p-5 row">
+          <div className="col-lg-7 p-3 row">
 
-            <div className="col-sm-6">
+            <div className="col-sm-6 p-2">
               <div className="student-comment shadow d-flex flex-column justify-content-center align-items-center">
-                <div className="row col-12 p-4">
+                <div className="row col-12 p-3">
                   <div className="col-3">
                     <img src={stuMohhJumah} alt="" />
                   </div>
-                  <div className="col-5">
+                  <div className="col-9">
                     <div style={{ fontWeight: "bold", fontSize: "1.2em" }}>
                       Mohh Jumah
                     </div>
@@ -51,7 +51,7 @@ export default function StudentReviews() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 p-4">
+                <div className="col-12 p-3">
                   <div style={{ fontSize: "0.9em" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Consectetur ac blandit nam massa massa elementum mollis
@@ -61,13 +61,13 @@ export default function StudentReviews() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-6 p-2">
               <div className="student-comment shadow d-flex flex-column justify-content-center align-items-center">
-                <div className="row col-12 p-4">
+                <div className="row col-12 p-3">
                   <div className="col-3">
                     <img src={stuJohnMark} alt="" />
                   </div>
-                  <div className="col-5">
+                  <div className="col-9">
                     <div style={{ fontWeight: "bold", fontSize: "1.2em" }}>
                       John Mark
                     </div>
@@ -76,7 +76,7 @@ export default function StudentReviews() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 p-4">
+                <div className="col-12 p-3">
                   <div style={{ fontSize: "0.9em" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Consectetur ac blandit nam massa massa elementum mollis
