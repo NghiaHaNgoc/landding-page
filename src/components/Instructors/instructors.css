@@ -8,7 +8,7 @@
 }
 
 #instructors .instructor-container .big-avatar {
-  transition: 0.5s ease;
+  transition: 1s ease;
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
@@ -17,7 +17,7 @@
 }
 
 #instructors .instructor-container:hover .big-avatar {
-  opacity: 0;
+  /* opacity: 0; */
 }
 #instructors .instructor-container .instructor-overlay {
   position: absolute;
@@ -26,16 +26,16 @@
   right: 0;
   background: white;
   overflow: hidden;
-  width: 0;
+  /* width: 0; */
   height: 100%;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
   opacity: 0;
 }
 
-#instructors .instructor-container:hover .instructor-overlay {
-  width: 100%;
-  opacity: 1;
-}
+/* #instructors .instructor-container:hover .instructor-overlay { */
+/*   width: 100%; */
+/*   opacity: 1; */
+/* } */
 
 #instructors .instructor-container .instructor-overlay img {
   width: 5em;
