@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: ls ~
+      - run: ls -a ~
       - run: pwd
       - run: env
       - name: List files in the repository
