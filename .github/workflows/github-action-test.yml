@@ -6,9 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
-      - run: ls
+      - name: List files in the pwd
+        run: ls
       - run: env
-      - run: |
+      - name: List files in the repository
+        run: |
         ls ${{ github.workspace }}
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
