@@ -5,11 +5,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: ls ~
       - run: pwd
       - run: env
       - name: List files in the repository
-        run: ls
-        run: ls ~
         run: |
           ls ${{ github.workspace }}
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
