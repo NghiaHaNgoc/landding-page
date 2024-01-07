@@ -2,11 +2,9 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in the repository
-        run: echo ${{ github.repository }}
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
@@ -16,12 +14,18 @@ jobs:
           ls ${{ github.workspace }}
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Install dependencies
         run: npm install
       - name: Build
         run: npm run lint
         continue-on-error: true
       - run: npm ci
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "🍏 This job's status is ${{ job.status }}.
+
+  build-project:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: rustc --version
 
