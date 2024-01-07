@@ -25,6 +25,7 @@ jobs:
 
   build-project:
     needs: test
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - run: rustc --version
