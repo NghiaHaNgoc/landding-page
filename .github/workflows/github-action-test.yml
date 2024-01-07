@@ -13,15 +13,16 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - uses: actions/setup-node@v3
-        with:
-          node-version: 20
+      - run: node --version
+        # with:
+          # node-version: 20
       - name: Install dependencies
         run: npm install
       - name: Build
         run: npm run lint
         continue-on-error: true
       - run: npm ci
-      - run: echo "🍏 This job's status is ${{ job.status }}.
+      - run: echo "🍏 This job's status is ${{ job.status }}."
 
   build-project:
     needs: test
